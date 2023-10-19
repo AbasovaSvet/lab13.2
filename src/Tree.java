@@ -1,10 +1,8 @@
 public class Tree { //дерево
-
-    Nut nut = new Nut();
-    int col = 15;
     public Nut[] growNut(int k){
-        Nut[] massNut = new Nut[col];
-        massNut[k] = new Nut();
+        Nut[] massNut = new Nut[k];
+        for (int i = 0; i < k; i++) {
+        massNut[i] = new Nut();}
         return massNut;
     }
 }
